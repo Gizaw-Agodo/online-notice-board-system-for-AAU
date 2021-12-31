@@ -1,5 +1,4 @@
   # project  title :Online-Notice-Board-System-For-AAU
-  #create notices save your time
 
 
 this system enables the following feautures 
