@@ -1,7 +1,8 @@
   # project  title :Online-Notice-Board-System-For-AAU
-the system we want to 
+the system we are building will solve the problems that exist in addis ababa university(AAU) related to anouncements and notices 
+ it will totaly eliminate the manual notice deployment mechanism  and transforms it to online system 
 
-this system enables the following feautures 
+this system will have  the following feautures 
     1   - it enables different offices to create theire own notice board online 
         - the notice boards created by the specific office will have specific name and id so that it can be identified by users easily
         - these offices can create,delete and update notices as requred 
