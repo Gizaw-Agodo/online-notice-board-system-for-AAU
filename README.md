@@ -1,6 +1,6 @@
   # project  title :Online-Notice-Board-System-For-AAU
 
-
+Online-Notice-Board-System-For-AAU is intended to 
 this system enables the following feautures 
     1   - it enables different offices to create theire own notice board online 
         - the notice boards created by the specific office will have specific name and id so that it can be identified by users easily
