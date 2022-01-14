@@ -25,5 +25,5 @@ the system we are building will solve the problems that exist in addis ababa uni
        
        1 . Gizaw Agodo  ............. UGR /8917 /12
        2 . Haile Dereje .............. UGR /2190 /12
-       3 . Abnet Anamo ............... UGR /7110 /12
+       3 . Abinet Anamo ............... UGR /7110 /12
        4 . Gizaw Dagne ............... UGR /6640 /12
