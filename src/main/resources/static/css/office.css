@@ -1,0 +1,27 @@
+.navbar{background-color: grey; width: 100%;}
+.navbar-brand{color: white;
+             margin-left: 3em ;
+            padding: .7em;}
+.form-inline{margin-right: 2em;}
+
+.form-control{background-color: grey;
+            color: black;}
+.img{margin: 1em;
+    }
+.container1{background-color: lightgray;
+            margin-top: 25px;
+            margin-left: 2em;
+            height: 500px;
+            background-color: lightgrey;
+            }
+
+.display{background-color: lightgrey;
+    border-radius: 1em;
+    box-shadow: 10px,10px;
+    margin: 1.8em;
+    margin-left: 2.5em;
+    height: 450px ;}
+.buton{background-color: grey;}
+.btn{margin-top: 1em;
+    background-color: lightgray;}
+.form-control{background-color: white;}
