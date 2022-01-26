@@ -29,9 +29,7 @@ public class RegistrationController {
 
     @PostMapping
     public String processRegistration( @Valid SignUp form, Errors errors) {  
-        if (errors.hasErrors()){
-            return "signUp";
-        }
+        
         userRepository.save(form.toUser(passwordEncoder));
         return "redirect:/loginnav"; 
         }
