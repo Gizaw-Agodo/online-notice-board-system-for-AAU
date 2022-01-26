@@ -1,7 +1,7 @@
 package com.aau.noticeboard;
 
 import java.util.Optional;
-import com.aau.noticeboard.Security.*;
+import com.aau.noticeboard.security.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Controller;

@@ -16,7 +16,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @RequestMapping("/register")
 public class RegistrationController {
-
+// first wirk
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 

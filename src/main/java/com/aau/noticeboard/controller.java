@@ -1,6 +1,6 @@
 package com.aau.noticeboard;
 
-import com.aau.noticeboard.Security.User;
+import com.aau.noticeboard.security.User;
 
 public interface controller {
 

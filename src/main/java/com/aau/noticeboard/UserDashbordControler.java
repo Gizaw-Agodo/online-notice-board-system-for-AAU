@@ -18,8 +18,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import java.security.Principal;
 import java.util.List;
 
-import com.aau.noticeboard.Security.User;
-import com.aau.noticeboard.Security.UserRepository;
+import com.aau.noticeboard.security.User;
+import com.aau.noticeboard.security.UserRepository;
 
 
 @Controller

@@ -1,4 +1,4 @@
-package com.aau.noticeboard.Security;
+package com.aau.noticeboard.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
