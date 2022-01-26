@@ -1,0 +1,23 @@
+.navbar{background-color: grey; width: 100%;}
+.navbar-brand{color: white;
+             margin-left: 3em ;
+            padding: .7em;}
+.form-inline{margin-right: 2em;}
+
+.form-control{background-color: grey;
+            color: black;}
+.img{margin-left: 1em;
+    width: 17em;}
+.container1{background-color: lightgray;
+            margin-left: 1em;
+            }
+.accordion-button{height: 5px;}
+.search{background-color: white;}
+.input-group {margin-top: 3px;}
+.display{background-color: lightgrey;
+    max-width: 850px;
+    box-shadow: 10px,10px;
+    /* margin-left: 3em; */
+    height: 500px ;}
+.display2{height: 400px;
+    background-color:lightgrey ;}
