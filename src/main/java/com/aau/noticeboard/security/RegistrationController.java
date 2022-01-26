@@ -1,5 +1,5 @@
 
-package com.aau.noticeboard.Security;
+package com.aau.noticeboard.security;
 
 import javax.validation.Valid;
 
