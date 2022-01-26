@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link  th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link rel="stylesheet" th:href="@{/css/office.css}">
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
+    
+  <style>
+  .nav-link{
+    font-size: 1em;
+    color: white;
+   }
+   </style>
+</head>
+<body style="background-color: lightgray; font-size: 25px;">
+
+  
+    <nav class="navbar navbar-expand-lg " style="background-color:green ; display: flex; align-items: flex-end; padding: 15px;">
+      <img src="/images/logo.png" alt="logo" style=" margin-left: 2em; width: 5em;">
+      
+        <div style="margin-left: 36em;" >
+          <ul class="navbar-nav navbar-right" >
+    
+           
+            <li class="nav-item">
+              <a class="nav-link" th:href="@{/signUp}" style="font-size: 20px; margin: 10px;">SignUp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/loginnav" style="font-size: 20px; margin: 10px;">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container" style="margin-left: 5px; ">
+        <div class="row justify-content-center mt-3 " >
+          <div class="col align-self-start" style="position: relative; margin-top: .5em;">
+            <img src="/images/aau1.png" alt="homepage photo" style="height: 100px; width: 500px;"/> 
+            <div> <img src="/images/bord5.jpg" alt="noticebord" style="height: 350px ; width: 500px;"/></div> 
+          </div>
+      
+          <div class="col-5 align-self-center margin-right: 15px"> 
+            <div class="header-text" style="width: 500px;">
+                <h1 style="font-style: italic;">Welcome to AAU NoticeBoard!!</h1>
+            </div>       
+            <h5> AAU- Notice Board is developed deliberately to provide daily
+              and recent updates/News of Addis Ababa University Offices to
+              the the students. 
+              If You are officilly AAU student, you can sign up so that your
+              info will be up to date! </h5>
+  
+          </div>
+         
+        </div>
+      </div>
+</body>
+</html>

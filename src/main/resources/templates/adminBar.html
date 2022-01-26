@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" >  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link th:href="@{css/css/bootstrap.min.css}" rel="stylesheet" />
+    
+    
+    <link
+      rel="stylesheet"
+      href="@{css/css/bootstrap.min.css}"
+    />
+    <link rel="stylesheet" th:href="@{css/css/new.css}">
+   
+  </head>
+  
+
+
+
+
+
+
+
+
+
+<body class="container-fluid ">
+  
+
+    <nav class="row back">
+      
+     
+      <ul class="nav justify-content-end">
+       
+        
+        
+       
+         <!-- <li class="navbar-brand ">hello</li> -->
+       <li class="nav-item h22">list of offices</li>
+          <li class=" nav-item "> <a th:href="@{/creat}" th:field="create" class="nav-link link-decor">Add Offices</a></li>
+          <li class=" nav-item "> <a href="#"  class="nav-link link-decor" style="margin-right: auto;">log out</a></li>
+        
+        
+        
+        
+      </ul>
+    </nav>
+    <div class="">
+     
+   
+      <!-- <div class="table-responsive-sm pt-5 "> -->
+        
+        <table class="table table-hover">
+          <thead class="head bg-light ">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Office Name</th>
+              <th scope="col">School</th>
+              <th scope="col">UserName</th>
+              <th scope="col">Password</th>
+              <th scope="col">Edit</th>
+              <th scope="col">Drop</th>
+          
+              
+            </tr>
+          </thead>
+          <tbody class="bg-light">
+            <tr th:each = "office : ${offices}">
+              <th th:text="${office.id}"></th>
+              <td th:text="${office.officeName}"></td>
+              <td th:text="${office.school}"></td>
+              <td th:text="${office.username}"></td>
+              <td th:text="${office.password}"></td>
+              <td>
+          
+                <a th:href="@{'/update/' + ${office.id}} " th:field="${office.id}" class="btn btn-success btn-xs"> Edit</a> 
+                
+            </td>
+              <td>
+               
+                 <a th:href="@{'/delete/'+ ${office.id} }" th:field="${office.id}" class="btn btn-danger btn-xs bg-red">Drop</a>
+                     
+            </td>
+  
+             
+            </tr>
+  
+           
+  
+           
+          </tbody>
+        </table>
+      <!-- </div> -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    </body>

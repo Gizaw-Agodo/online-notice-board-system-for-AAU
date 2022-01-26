@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>officedashboard</title>
+    <link  th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link rel="stylesheet" th:href="@{/css/office.css}">
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
+    
+</head>
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar">
+            <a class="navbar-brand ">welcome user</a>
+            <form method="post" class="form-inline " th:action = "@{/logout}" >
+              <input class="form-control " type="submit" value = "logout" style= "background-color: grey; color: white;" >
+            </form>
+        </nav>
+
+
+        <div class="row">
+
+            <div class="container1 col-5">
+                 <img class=" img pt-5 col-10 " th:src="@{/images/download.png}" alt="user profile" > 
+                 <div class="col-10"> <h5>welcome user you can create notice boards <br/> add notices and delete notices in this page</h5> </div>
+            </div>
+
+
+
+
+            <div class="col-6 container1">
+                                    
+                        <div style="display: flex;" class="row">
+                            <div class="col-5 " ><button style="background-color: grey; color: white;" type="button"  class="btn btn-info buton  "  data-bs-toggle="collapse" data-bs-target="#demo"   flex-fill > create notice board</button></div>
+                            <div class="col-5 "  ><button class="btn bnt-inf  " style = "background-color: grey; color: white;"  data-bs-toggle="collapse" data-bs-target="#demodemo"   flex-fill >search bord</button></div>
+                        </div>
+                    
+
+                        <div class="row" >
+                            <div  id="demo" class="collapse col-5 mt-2 " style="background-color: wheat; "  > 
+                            <form  method="POST" th:action="@{offices}" modelAttribute = "office" class="main-form mt-sm-2 " >
+                            
+
+                                <div class="border-bottom border-3 border-success pt-3 col-12 mt-2" >
+                                    <label class="form-lable" >add Noticeboard name </label>
+                                    <input class="form-control " name="username" type="text"  placeholder="descriptive name about the notice board" />
+                                </div>
+                                <div class=" border-bottom border-3 border-success pt-3 col-12">
+                                    <label class="form-lable"> owner of bord</label>
+                                    <input class="form-control " type="text" name="officename" placeholder="add name " />
+                                </div>
+
+                                <div class="pt-2">
+                                    <input class="btn btn-primary mt-2" type="submit" /> </input>
+                                </div>
+                            </form>
+                            </div> 
+                            
+                            <div id="demodemo" class="collapse col-4">
+                            <form class="input-group col-5 mt-3" style="display: flex; flex-wrap: nowrap;" th:action ="@{/search2}" method="post">
+                                <input type="search"  placeholder="Search notice board " name="keyword" required class="p-1"/>
+                                <input type="submit" value="search"  class="p-1"/> 
+                            </form> 
+                            </div>
+
+                        </div>
+
+
+                        
+                        <div><h5 class="mt-5 row">your notice boards will apear here </h5></div>
+                        <div th:each = "board: ${noticeboard}" style="max-height: 350px; overflow-y: auto;">
+                            <p>
+                            <button th:text ="|${board.username} notice board|" class="btn  col-7 btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls=" multiCollapseExample2" style="color:black; background-color: wheat; font-family: Arial, Helvetica, sans-serif;"></button>
+                            <a class="btn  btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" style="color: white; background-color: grey;">add notice</a>
+
+                            </p>
+                        
+                        
+                            <div class="row">
+                            <div class="col-7">
+                                <div class=" " id="multiCollapseExample2">
+                                <div th:each= "notice : ${notices}" class="card card-body">
+                                    <div style="border: 2px solid green;" class="col-12">
+                                        <h5 th:text = "${notice.title}"></h5>
+                                        <p th:text = "${notice.discription}"></p>
+                                    </div>
+
+                                    <form method="post" th:action="delete">
+                                        <input type="text" name="offId" th:value="${notice.id}" class="check" style="display: none;" >
+                                        <button type="submit" class="btn btn-danger btn-xs" style="color: black;">delete</button>
+                                    </form> 
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col">
+                            <div class="collapse multi-collapse " id="multiCollapseExample1" >
+                                <div class="card card-body" style = "border: 1px solid green;">
+                                    <form  method="POST" th:action="@{offices2}" modelAttribute = "offices2" class="main-form mt-sm-2 " >
+                                        <input type="text" style="display: none;" th:value = "${board.username}"  th:name = "keyword">
+
+                                        <div class="border-bottom border-3 border-success  col-12" style="color:black">
+                                            <label class="form-lable" >title </label>
+                                            <input class="form-control " name="title" type="text"  placeholder="add title" />
+                                        </div>
+                                        <div class=" border-bottom border-3 border-success col-12">
+                                            <label class="form-lable"> content</label>
+                                            <textarea class="form-control " type="text" name="discription" placeholder="add content " /> </textarea>
+                                        </div>             
+                                        <div class="pt-2" >
+                                            <input class="btn btn-primary mt-2" type="submit" value="add" /> </input>
+                                        </div>
+                                    </form>
+                            
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                       
+                    
+                
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
