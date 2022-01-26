@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>How To Create Bootstrap Registration Form With Validation</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Bootstrap 4 Required CDN Links -->
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" th:href="@{css/css/new.css}">
+</head>
+<body class="container back2">
+	<div class="container" >
+		<div class="row">
+			<div class="col-sm-8 col-md-6 offset-sm-2 offset-md-3">
+				<form class="register-form bg-light"  th:action="@{'/submit/' + ${office.id}}">
+					<h2 class="text-center text-success">Edit Fields</h2>
+					<hr>
+				  	<div class="form-group margin">
+				    	<label>Office Name</label>
+				    	<input type="text" class="form-control" placeholder="office name here" th:field="${office.officeName}">
+				    	<span class="hint alert-success">Enter you valid email id</span>
+				  	</div>
+
+            <div class="form-group margin">
+				    	<label>School Name</label>
+				    	<input type="text" class="form-control" placeholder="School name" th:field="${office.school}">
+				    	<span class="hint alert-success">Enter you valid email id</span>
+				  	</div>
+
+            <div class="form-group margin"> 
+				    	<label>User Name</label>
+				    	<input type="email" class="form-control" placeholder="user name here " th:field="${office.username}">
+				    	<span class="hint alert-success">Enter you valid email id</span>
+				  	</div>
+
+				  	<div class="form-group margin">
+				    	<label>Password</label>
+				    	<input type="password" class="form-control" placeholder="Password" th:field="${office.password}">
+				    	<span class="hint alert-success">Password should be 4 or up chars </span>
+				  	</div>
+				  
+				  	<hr>
+					<button type="submit" class="btn btn-success float-right" >Update</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
