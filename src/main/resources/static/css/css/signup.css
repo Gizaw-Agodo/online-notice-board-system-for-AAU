@@ -59,6 +59,7 @@
   border: none;
   min-width: 200px;
 }
+.form-control{color: black;}
 .signup-form .btn:hover,
 .signup-form .btn:focus {
   background: #00b073 !important;

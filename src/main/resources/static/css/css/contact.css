@@ -1,0 +1,156 @@
+
+body{
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+    grid-template-columns: 1fr;
+}
+main{
+    background-color: rgb(226, 223, 223);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+   
+   justify-content: space-around;
+   align-items: center;
+   
+    height: fit-content;
+    padding: 10px;
+    
+
+
+    
+
+}
+#forms{
+    display: flex;
+    width: 50%;
+    padding: 10%;
+    margin-bottom: 30px;
+    flex-direction: column;
+   
+    
+}
+
+
+input[type="button"] {
+    width:20% ;
+    box-sizing: border-box;
+    
+    border: 1px solid black;
+    border-radius: 4px;
+    align-self: center;
+    font-size: 16px;
+    margin: 12px 0px;
+    padding: 12px ;
+    
+   
+}
+input[type="button"]:active{
+   
+    background-color: rgb(6, 131, 125);
+    
+}
+input[type="button"]:hover{
+    cursor:pointer;
+}
+
+
+
+
+label{
+    margin-bottom: 12px;
+   
+    cursor: pointer;
+}
+
+.heading{
+    align-self: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: rgb(241, 66, 35) 3px solid;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.label{
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+.contact-detail{
+    display: flex;
+    margin: 0px 20px;
+    flex-flow: column wrap;
+   background-color: rgb(140, 138, 206);
+   border-radius: 30px;
+    width: 40%;
+   
+}
+.contact-box{
+    display: flex;
+    flex-basis: auto;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+   justify-content: space-around;
+    
+    
+}
+.contact-box li{
+    font-size: 1rem;
+    font-weight: bold;
+}
+#contacthead{
+    
+   
+    align-self: center;
+    margin-bottom: 12%;
+}
+li{
+    list-style: none;
+}
+.navigation a{
+    margin: 5px;
+    padding: 0px;
+}
+@media screen and (max-width:600px)
+{
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-box{
+    
+    
+    font-size: 1rem;
+    margin-bottom: 10px;
+   justify-content: space-around;
+    
+    
+}
+.navigation a{
+    margin: 10px;
+    padding: 5spx;
+}
+textarea {
+    width: 60%;
+    height: 10%;
+    
+}
+input{
+    width: 60%;
+}
+.contact-detail{
+    width: 90%;
+}
+#forms{
+    width: 90%;
+}
+}
+
+

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .full-page{
+    
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    );
+    
+  }
+  .two {
+    padding: 0 0 0 127px;
+}
+  .A {
+    background-color: #2b443eed;
+    margin-top: 0;
+  }
+  .B{
+    display: flex;
+    justify-content: space-between;
+}
+  .description {
+    display: flex;
+justify-content: center;    
+margin-left: 40px;
+  }
+  .class{
+    width: 40%;
+  }
+  .navbar {
+    display: flex;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  #c {
+    width: 250px;
+    margin: 39px 1px 5px 69px;
+    padding: 0 0 0 0;
+    font-family: ui-monospace;
+    font-size: medium;
+  }
+  nav{
+   flex: 1;
+   text-align: right;
+  }
+  nav ul{
+    display: inline-block;
+    list-style: none;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 70px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  nav ul li button {
+    font-size: 20;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  nav ul li button:hover {
+    color: aqua;
+  }
+  nav ul li a:hover {
+    color: aqua;
+  }
+  a {
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 28px;
+  }
+  #login-form{
+    display: none;
+  }
+  .h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 9px 0;
+    margin-bottom: -4px;
+    padding: 0px 0;
+  }
+  .toggle-btn {
+    padding: -24px 80px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    border-radius: 50px;
+    width: fit-content;
+  }
+  .container {
+    width: 418px;
+    background: #334a45;
+    margin: 0 0  0  87px;
+  }
+  .btn-group-xs>.btn, .btn-xs {
+    margin-left: 32px;
+    margin-top: 20px;
+    padding: 0 5px;
+    font-size: 11px;
+    border-radius: -1px;
+  
+  }
+  
+  #regx{
+    margin-left: 80px;
+  }
+  #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 210px;
+    height: 100%;
+    background: #e0d6ca07;
+    border-radius: 30px;
+    transition: .5s;
+  }

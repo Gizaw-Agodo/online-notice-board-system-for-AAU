@@ -1,0 +1,278 @@
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.full-page{
+  
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+  
+}
+
+.A {
+  background-color: #2b443eed;
+  margin-top: 0;
+}
+.B{
+  display: flex;
+  align-items: center;
+}
+#description {
+  display: flex;
+  /* flex-direction: column; */
+  margin-left: 40px;
+}
+.class{
+  width: 40%;
+}
+.navbar {
+  display: flex;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+#c {
+  /* display: none; */
+  width: 250px;
+  margin: 39px 1px 5px 69px;
+  padding: 0 0 0 0;
+  font-family: ui-monospace;
+  font-size: medium;
+}
+nav{
+ flex: 1;
+ text-align: right;
+}
+nav ul{
+  display: inline-block;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 70px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul li button {
+  font-size: 20;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul li button:hover {
+  color: aqua;
+}
+nav ul li a:hover {
+  color: aqua;
+}
+a {
+  text-decoration: none;
+  color: palevioletred;
+  font-size: 28px;
+}
+#login-form{
+  display: none;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+  margin-top: 9px 0;
+  margin-bottom: -4px;
+  padding: 0px 0;
+}
+.form-box {
+  width: 268px;
+  height: 417px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #1079b1;
+  overflow: hidden;
+  border-radius: 11px;
+}
+
+.butten-box{
+   width: 220px;
+   margin: 35px auto;
+   position: relative;
+   box-shadow: 0 0 20px 9px #d8dace15;
+   border-radius: 30px; 
+}
+.toggle-btn {
+  padding: -24px 80px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  border-radius: 50px;
+  width: fit-content;
+}
+.container {
+  width: 418px;
+  background: #334a45;
+  margin: 0 0  0  87px;
+}
+.btn-group-xs>.btn, .btn-xs {
+  margin-left: 32px;
+  margin-top: 20px;
+  padding: 0 5px;
+  font-size: 11px;
+  border-radius: -1px;
+
+}
+
+#regx{
+  margin-left: 80px;
+}
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 210px;
+  height: 100%;
+  background: #e0d6ca07;
+  border-radius: 30px;
+  transition: .5s;
+}
+.input-group-login {
+  position: absolute;
+  width: 120px;
+  height: 250px;
+  transition: .5s;
+  height: 180x;
+  margin: 64px 0 0 0;
+}
+.input-group-register {
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+  padding: 15px 0px;
+}
+.input-field {
+  height: fit-content;
+  width: 90%;
+  padding: -2px 0;
+  margin: 2px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.submit-btn{
+  width: 85%;
+  padding:10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: rgb(53, 36, 129);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.check-box{
+  margin: 30px 10px 34px 0;
+
+}
+span{
+color: rgb(160, 50, 50);   
+font-size: 12px;
+bottom: 68px;
+position: absolute;  
+}
+#login{
+  left: 50px;
+
+}
+#login input{
+  color: white;
+  font-size: 15px;
+}
+#register{
+  left: 450px;
+
+}
+#register input{
+  color: white;
+  font-size: 15px;
+  
+}
+
+.lowwer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.left {
+  padding: 0 0;
+  margin-left: 5vw;
+}
+#ber {
+  margin: 29px 0 0 23px;
+  width: 42vw;
+}
+#wel {
+  font-family: fangsong;
+  padding: 7px 3px 4px 43px;
+  font-size: medium;
+  font-weight: 500;
+}
+img {
+  border: 0;
+  margin: 30px 0 0 33px;
+}
+#logo {
+  width: 18vw;
+  height: 14vh;
+   margin-bottom: -51px;
+
+}
+
+@media screen and (max-width: 700px) {
+  .B{
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    border: 0;
+    margin: 30px 0 0 33px;
+    width: 81%;
+}
+.form-box {
+  width: 371px;
+  height: 417px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #1079b1;
+  overflow: hidden;
+  border-radius: 11px;
+}
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 16px 48px;
+  margin-right: -70px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: 5px solid transparent;
+  border-radius: 4px;
+  background: wheat;
+}
+}

@@ -1,0 +1,103 @@
+.container,.container-fluid{
+    margin: 0px ;
+    padding: 0px;
+}
+.link-decor{
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(125, 124, 221);
+    box-shadow: 5px 5px 5px 1px rgb(63, 61, 61);
+    padding: .3%;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100px;
+    margin-left: 3%;
+    
+}
+.button{
+    margin: 50%;
+}
+.link-decor:hover{
+    color: white;
+    box-shadow: 0px 5px 5px 5px rgb(63, 61, 61);
+   
+    
+}
+.h22{
+    
+    font-weight: bold;
+    color: white;
+   
+    
+    padding: .3%;
+    margin-right: auto;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+
+.twobutton{
+    
+}
+.back{
+    background-color: rgb(80, 107, 98);
+    margin-bottom: 3%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.back2{
+    background: #4f76b9;
+  background: -webkit-linear-gradient(left, #3d6bc0);
+  background: -o-linear-gradient(left, #3b65ad);
+  background: -moz-linear-gradient(left, #3e4a5f);
+  background: linear-gradient(left,  #40619b);
+}
+.margin{
+    margin: 5%;
+    padding: 3%;
+}
+
+
+.register-form {
+    padding: 25px 15px;
+    border-radius: 0px 40px 0px 40px;
+    margin: 50px 0px;
+    border: 1px solid #ddd;
+    float: left;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px #cacaca;
+    border-left: 5px solid #28a745;
+}
+.register-form .form-group {
+    position: relative;
+}
+.register-form .hint {
+    display: none;
+    position: absolute;
+    right: 0;
+}
+.register-form span {
+    display: block;
+    padding: 2px 15px;
+    border-radius: 4px;
+}
+.register-form input:focus + span {
+    display: block;
+}
+.container{
+    padding: 0px;
+    margin: 0px !important;
+}
+
+.page-start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    margin:40%;
+}

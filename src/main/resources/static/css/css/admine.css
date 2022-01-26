@@ -1,0 +1,31 @@
+input {
+    border: 0;
+}
+#form1{
+    padding: 0 5%;
+}
+.border-bottom{
+    margin-top: 5vh;
+}
+
+.head{
+    padding: auto;
+}
+#cancelbutten {
+    margin-left: 3vw;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #29677ccc;
+    border-color: #2e6da4bd;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0b3e6ac2;
+    border-color: #2e6da4;
+}
+@media screen and (max-width:530px) {
+    .container{
+max-width: 100%;   
+}
+}
