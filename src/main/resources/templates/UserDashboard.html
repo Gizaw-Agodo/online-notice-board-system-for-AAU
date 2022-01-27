@@ -17,13 +17,10 @@
         <nav class="navbar" style="margin-right: 4em;">
             <a class="navbar-brand ">welcome user</a>
            
-            <form method="post" th:action="@{/check}">
-                <button type="submit" class="btn btn-primary btn-xs" style="color: white;">admin</button>
-            </form>
-
-            <form method="post" th:action="@{/check}">
-                <button type="submit" class="btn  btn-xs btn-primary" style="color: WHITE;">officesDashboard</button>
-            </form> 
+            
+                <a href="/adminBar" class="btn btn-primary btn-xs" style="color: white;">admin</a>
+                <a href="/offices" class="btn  btn-xs btn-primary" style="color: WHITE;">officesDashboard</a>
+         
 
             <form method="post" class="form-inline " th:action = "@{/logout}" >
               <input class="form-control " type="submit" value = "logout" style= "background-color: grey; color: white;" >
