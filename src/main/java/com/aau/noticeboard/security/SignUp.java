@@ -8,7 +8,6 @@ import lombok.Data;
 @Data
 public class SignUp{
     private String fullname;
-    @Size(min = 3, message = "Need at least 3 characters")
     private String username;
     private String password;
     @Email(message = "Email invalid")
